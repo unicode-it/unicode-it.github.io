@@ -1,0 +1,17 @@
+[
+  {
+    "title": "AREAS-1-TITLE",
+    "content": "AREAS-1-TEXT",
+    "icon": "media/portfo_ing.svg"
+  },
+  {
+    "title": "AREAS-2-TITLE",
+    "content": "AREAS-2-TEXT",
+    "icon": "media/portfo_web.svg"
+  },
+  {
+    "title": "AREAS-3-TITLE",
+    "content": "AREAS-3-TEXT",
+    "icon": "media/philo_service.svg"
+  }
+]

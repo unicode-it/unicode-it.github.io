@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <h2>{{ 'IMPRESSUM_TITLE' | translate }}</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <p><b>
+            {{ unicode_meta.firma }}<br>
+            {{ unicode_meta.street }}<br>
+            {{ unicode_meta.address }}
+        </b></p>
+        <p><b>
+            Vertretungsberechtiger Geschäftsführer: {{ unicode_meta.boss }}
+        </b></p>
+        <p><b>
+            Telefon: 0453</b><span></span><b>1-412</b><span></span><b>295-0<br>
+            Fax: 0453</b><span></span><b>1-412</b><span></span><b>295-9<br>
+        </b></p>
+        <p><b>
+            E-Mail: <a href="mailto:{{ unicode_meta.email }}" onmouseover="this.href=this.href.replace(/qrx/g,'');" class="email" style="color: #333333"><b>in</b><span><b>fo@</b></span><b>uni</b><span></span><b>code-it.de</b></a>
+        </b></p>
+        <p><b>
+            Registergericht: {{ unicode_meta.court }}<br>
+            Registernummer: {{ unicode_meta.hrid }}
+        </b></p>
+        <p><b>
+            Umsatzsteuer-Identifikationsnummer gem. § 27a UStG: {{ unicode_meta.taxid }}
+        </b></p>
+    </div>
+</div>

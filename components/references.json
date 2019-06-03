@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Motionlogic",
+    "url": "https://www.motionlogic.de/",
+    "content": "REFERENCE-ML-TEXT",
+    "icon": "/media/ml-logo.png"
+  },
+  {
+    "title": "roots of compassion",
+    "url": "https://www.rootsofcompassion.org/",
+    "content": "REFERENCE-ROC-TEXT",
+    "icon": "/media/roc-logo.png"
+  },
+  {
+    "title": "SCHULZ SEELIG TRIEBE",
+    "url": "https://www.erbrecht-in-ahrensburg.de/",
+    "content": "REFERENCE-SST-TEXT",
+    "icon": "/media/sst-logo.png"
+  },
+  {
+    "title": "ARI Dokumentationsstelle",
+    "url": "https://www.ari-dok.org/webdokumentation/",
+    "content": "REFERENCE-ARI-TEXT",
+    "icon": "/media/ari-logo.png"
+  }
+]

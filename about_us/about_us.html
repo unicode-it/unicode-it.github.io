@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-sm-4 col-md-4 col-lg-4"><img src="media/light-bulbs.png" class="img-responsive"> </div>
+    <div class="col-sm-8 col-md-8 col-lg-7">
+        <h2>{{ 'ABOUT_US_TITLE' | translate }}</h2>
+        <p translate="{{ 'ABOUT_US_TEXT' }}"></p>
+        <p class="text-right"><a href="/portfolio" class="btn btn-default">{{ 'PORTFOLIO_TITLE' | translate }} &raquo;</a></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <h2>{{ 'REFERENCES_TITLE' | translate }}</h2>
+    </div>
+</div>
+<div class="row" style="margin-top: 20px">
+    <div class="col-sm-12 col-md-12 col-lg-11" ng-repeat="reference_entry in references">
+        <div ng-if="$index % 2 === 0">
+            <div class="reference-odd">
+                <p translate="{{reference_entry.content}}"></p>
+            </div>
+            <div><div class="reference-odd-img-frame"><img ng-src="{{ reference_entry.icon }}"></div><a href="{{ reference_entry.url }}"><p class="reference-odd-box-title">{{reference_entry.title}}</p></a></div>
+        </div>
+        <div ng-if="$index % 2 === 1">
+            <div class="reference-even">
+                <p translate="{{reference_entry.content}}"></p>
+            </div>
+            <div><a href="{{ reference_entry.url }}"><p class="reference-even-box-title">{{reference_entry.title}}</p></a><div class="reference-even-img-frame"><img ng-src="{{ reference_entry.icon }}"></div></div>
+        </div>
+    </div>
+</div>

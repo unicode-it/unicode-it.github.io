@@ -1,0 +1,17 @@
+[
+  {
+    "title": "PHILOSOPHY-1-TITLE",
+    "content": "PHILOSOPHY-1-TEXT",
+    "icon": "media/philo_secure.svg"
+  },
+  {
+    "title": "PHILOSOPHY-2-TITLE",
+    "content": "PHILOSOPHY-2-TEXT",
+    "icon": "media/philo_oss.svg"
+  },
+  {
+    "title": "PHILOSOPHY-3-TITLE",
+    "content": "PHILOSOPHY-3-TEXT",
+    "icon": "media/philo_service.svg"
+  }
+]

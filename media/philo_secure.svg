@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- License Agreement at http://iconmonstr.com/license/ -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="512px"
+   height="512px"
+   viewBox="0 0 512 512"
+   enable-background="new 0 0 512 512"
+   xml:space="preserve"
+   id="svg2"
+   inkscape:version="0.91 r"
+   sodipodi:docname="philo_secure.svg"><metadata
+     id="metadata9"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs7" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     id="namedview5"
+     showgrid="false"
+     inkscape:zoom="0.4609375"
+     inkscape:cx="-252.74576"
+     inkscape:cy="247.32204"
+     inkscape:window-x="1024"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" /><path
+     inkscape:connector-curvature="0"
+     style="fill:#20c5df;fill-opacity:1"
+     d="m 370.53716,197.80037 -35.89202,0 0,-47.85601 c 0,-57.76619 -26.6199,-91.724017 -79.76003,-91.724017 -53.16004,0 -79.76001,33.957827 -79.76001,91.724017 l 0,47.85601 -39.88001,0 c -11.02682,0 -19.94001,12.88125 -19.94001,23.90808 l 0,155.55198 c 0,10.94707 8.53432,22.71166 18.96295,26.06159 l 23.86818,7.71678 c 10.44856,3.32998 27.95589,6.10164 38.92289,6.10164 l 115.65203,0 c 10.94707,0 28.47433,-2.77166 38.90296,-6.12159 l 23.84824,-7.71677 c 10.44857,-3.32999 19.00283,-15.09458 19.00283,-26.04165 l 0,-155.55198 c 0,-11.02683 -12.92113,-23.90808 -23.928,-23.90808 z m -75.77203,0 -79.76002,0 0,-55.85194 c 0,-28.81332 15.89218,-43.84807 39.88,-43.84807 23.98783,0 39.88002,15.03475 39.88002,43.84807 l 0,55.85194 z"
+     id="path3" /></svg>

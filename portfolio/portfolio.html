@@ -1,0 +1,142 @@
+<script type="text/ng-template" id="group-template.html">
+    <div class="panel panel-default">
+        <div class="panel-heading" ng-click="toggleOpen()">
+            <!--<h4 class="panel-title" style="color:#222222">-->
+                <div tabindex="0" class="accordion-toggle" uib-accordion-transclude="heading">
+                    <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+                      {{heading}}
+                    </span>
+                </div>
+            <!--</h4>-->
+        </div>
+        <div class="panel-collapse collapse" uib-collapse="!isOpen">
+            <div class="panel-body" ng-transclude></div>
+        </div>
+    </div>
+</script>
+
+
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <h2>{{ 'AREAS-TITLE' | translate }}</h2>
+    </div>
+</div>
+
+<div class="row" style="margin-top: 20px">
+    <div class="col-sm-4 col-md-4 col-lg-4" ng-repeat="area_entry in areas">
+        <div class="panel panel-default">
+            <div class="phil-heading-box">
+                <div class="phil-img-frame">
+                    <img ng-src="{{ area_entry.icon }}">
+                </div>
+                <p class="phil-box-title">{{area_entry.title | translate}}</p>
+            </div>
+            <div class="panel-body"><p class="phil-box-content" translate="{{area_entry.content}}"></p></div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <h2>{{ 'PORTFOLIO-TITLE' | translate }}</h2>
+    </div>
+</div>
+<div class="row" ng-controller="PortfolioAccordionCtrl">
+    <div class="accordion">
+        <uib-accordion close-others="oneAtATime" id="portfolio-accordion">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                
+                
+                
+                <div uib-accordion-group class="panel-default" ng-repeat="portfolio_entry in portfolio" template-url="group-template.html" ng-if="$index < (portfolio.length / 2)" is-open="status[$index].isOpen">
+                    <uib-accordion-heading>
+                        <div class="accordion-header-table">
+                            <div class="table-row">
+                                <div class="accordion-img"><img ng-src="{{ portfolio_entry.icon }}"></div>
+                                <div class="accordion-title"><h4>{{portfolio_entry.title | translate}}</h4></div>
+                                <div class="accordion-icon"><i class="pull-right glyphicon" ng-class="{'glyphicon-minus': status[$index].isOpen, 'glyphicon-plus': !status[$index].isOpen}"></i></div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                    </uib-accordion-heading>
+                    <p translate="{{portfolio_entry.content}}"></p>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div uib-accordion-group class="panel-default" ng-repeat="portfolio_entry in portfolio" template-url="group-template.html" ng-if="$index >= (portfolio.length / 2)" is-open="status[$index].isOpen">
+                    <uib-accordion-heading>
+                        <div class="accordion-header-table">
+                            <div class="table-row">
+                                <div class="accordion-img"><img ng-src="{{portfolio_entry.icon}}"></div>
+                                <div class="accordion-title"><h4>{{portfolio_entry.title | translate}}</h4></div>
+                                <div class="accordion-icon"><i class="pull-right glyphicon" ng-class="{'glyphicon-minus': status[$index].isOpen, 'glyphicon-plus': !status[$index].isOpen}"></i></div>
+                            </div>
+                        </div>
+                    </uib-accordion-heading>
+                    <p translate="{{portfolio_entry.content}}"></p>
+                </div>
+            </div>
+        </uib-accordion>
+    </div>
+</div>
+
+<div class="row" style="margin-top: 20px" id="techno-button">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <p><a href="/technologies" class="btn btn-default">{{ 'TECHNOLOGIES-TITLE' | translate }}</a></p>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <h2>{{ 'PHILOSOPHY-TITLE' | translate }}</h2>
+    </div>
+</div>
+
+<div class="row" style="margin-top: 20px">
+    <div class="col-sm-4 col-md-4 col-lg-4" ng-repeat="philosophy_entry in philosophy">
+        <div class="panel panel-default">
+            <div class="phil-heading-box">
+                <div class="phil-img-frame">
+                    <img ng-src="{{ philosophy_entry.icon }}">
+                </div>
+                <p class="phil-box-title">{{philosophy_entry.title | translate}}</p>
+            </div>
+            <div class="panel-body"><p class="phil-box-content" translate="{{philosophy_entry.content}}"></p></div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <p class="text-right"><a href="/team" class="btn btn-default">{{ 'TEAM_TITLE' | translate }} &raquo;</a></p>
+    </div>
+</div>

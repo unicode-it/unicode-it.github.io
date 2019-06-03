@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Pavel Dahncke",
+    "role": "Devops/Engineering",
+    "mail": "paqrxvel.dahncke@unqrxicode-it.de",
+    "image": "media/portrait-05.svg",
+    "qualification": [
+      "Monitoring",
+      "Infrastruktur (as code)",
+      "Konfigurationsmanagement",
+      "Datenbanken",
+      "Microcontroller"
+    ]
+  },
+  {
+    "name": "Joachim Daub",
+    "role": "Frontend/CMS",
+    "mail": "joachim.dauqrxb@unicoqrxde-it.de",
+    "image": "media/portrait-02.svg",
+    "qualification": [
+      "CMS Systems",
+      "E-Commerce",
+      "HTML5/CSS/JS",
+      "PHP",
+      "Geo-Web-Applications"
+    ]
+  },
+  {
+    "name": "Dipl. Ing. Niels Reich",
+    "role": "Fullstack/Devops/Engineering",
+    "mail": "niels.reiqrxch@unicqrxode-it.de",
+    "image": "media/portrait-03.svg",
+    "qualification": [
+      "Backend-Applications",
+      "Single-Page-Applications",
+      "Projektmanagement",
+      "Infrastruktur",
+      "Konfigurationsmanagement",
+      "CAE/FEM",
+      "Composite"
+    ]
+  },
+  {
+    "name": "Henning Schumann, M.Sc.",
+    "role": "Fullstack-Developer",
+    "mail": "henning.schumaqrxnn@unicqrxode-it.de",
+    "image": "media/portrait-07.svg",
+    "qualification": [
+      "Web-Applications",
+      "Backend-Applications",
+      "Machine Learning",
+      "Elasticsearch / Solr"
+    ]
+  },
+  {
+    "name": "Florian Weps",
+    "role": "Operations",
+    "mail": "floqrxrian.weps@unicode-it.de",
+    "image": "media/portrait-06.svg",
+    "qualification": [
+      "Deployment",
+      "Administration",
+      "Devops"
+    ]
+  }
+]

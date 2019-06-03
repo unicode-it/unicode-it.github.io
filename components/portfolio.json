@@ -1,0 +1,42 @@
+[
+  {
+    "title": "PORTFOLIO-2-TITLE",
+    "content": "PORTFOLIO-2-TEXT",
+    "icon": "/media/portfo_organisation.svg"
+  },
+  {
+    "title": "PORTFOLIO-3-TITLE",
+    "content": "PORTFOLIO-3-TEXT",
+    "icon": "/media/portfo_data.svg"
+  },
+  {
+    "title": "PORTFOLIO-4-TITLE",
+    "content": "PORTFOLIO-4-TEXT",
+    "icon": "/media/portfo_presentation.svg"
+  },
+  {
+    "title": "PORTFOLIO-5-TITLE",
+    "content": "PORTFOLIO-5-TEXT",
+    "icon": "/media/portfo_cms.svg"
+  },
+  {
+    "title": "PORTFOLIO-6-TITLE",
+    "content": "PORTFOLIO-6-TEXT",
+    "icon": "/media/portfo_fair.svg"
+  },
+  {
+    "title": "PORTFOLIO-7-TITLE",
+    "content": "PORTFOLIO-7-TEXT",
+    "icon": "/media/portfo_apps.svg"
+  },
+  {
+    "title": "PORTFOLIO-8-TITLE",
+    "content": "PORTFOLIO-8-TEXT",
+    "icon": "/media/portfo_projectm.svg"
+  },
+  {
+    "title": "PORTFOLIO-9-TITLE",
+    "content": "PORTFOLIO-9-TEXT",
+    "icon": "/media/portfo_techno.svg"
+  }
+]

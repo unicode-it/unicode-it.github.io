@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>UNI:CODE IT Solutions GmbH</title>
+  <meta name="revisit-after" content="3 days">
+  <meta name="distribution" content="global">
+  <meta name="rating" content="general">
+  <meta name="keywords" content="Softwareentwicklung, Development, Devops, Project management, Webentwicklung, Web development, Consulting, Engineering, IT, Big data, Data science, Systemadministration, Mobile apps, Frontend, Backend, Django, Angular, Elasticsearch, Solr, Ansible, Python">
+  <meta name="description" content="UNI:CODE ist ein junges Unternehmen, das sich aus einem Zusammenschluss von Selbstständigen und Angestellten aus dem Bereich der Informationstechnologie sowie der Ingenieurs- und Naturwissenschaften entwickelt hat.">
+  <meta name="author" content="UNI:CODE IT Solutions GmbH">
+  <meta name="publisher" content="UNI:CODE IT Solutions GmbH">
+  <meta name="copyright" content="UNI:CODE IT Solutions GmbH">
+  <meta name="audience" content="Alle">
+  <meta name="page-topic" content="Dienstleistung">
+  <meta name="language" content="DE">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="google-site-verification" content="KUKOk1yTePqJA8iPissyS9_WpR-ipVFg_2iCr2j-bhk">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="bower_components/roboto-fontface/css/roboto/roboto-fontface.css" rel="stylesheet">
+  <link href="bower_components/roboto-fontface/css/roboto-condensed/roboto-condensed-fontface.css" rel="stylesheet">
+  <link href="bower_components/roboto-fontface/css/roboto-slab/roboto-slab-fontface.css" rel="stylesheet">
+  
+  
+
+
+  <link href="components/cosmo/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css">
+
+
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+</head>
+<body ng-controller="MainController">
+  
+  <script>
+    (function () {
+      // Retrieve the URL the user was trying to access when receiving the 404.
+      var redirect = sessionStorage.redirect;
+      // Remove the URL from sessionStorage.
+      delete sessionStorage.redirect;
+      // Check if we actually need to redirect.
+      if (redirect && redirect != location.href) {
+        // We need to redirect to the URL the user was trying to access.
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
+  
+
+<div class="m-app-loading" ng-animate-children>
+
+  
+  <style type="text/css">
+    div.m-app-loading {
+      position: fixed ;
+        z-index: 99999;
+
+    }
+    div.m-app-loading div.animated-container {
+      background-color: #222222 ;
+      bottom: 0px ;
+      left: 0px ;
+      opacity: 1.0 ;
+      position: fixed ;
+      right: 0px ;
+      top: 0px ;
+    }
+    /* Used to initialize the ng-leave animation state. */
+    div.m-app-loading div.animated-container.ng-leave {
+      opacity: 1.0 ;
+      transition: all linear 200ms ;
+      -webkit-transition: all linear 200ms ;
+      transition-delay: 2s;
+      -webkit-transition-delay: 2s;
+    }
+    /* Used to set the end properties of the ng-leave animation state. */
+    div.m-app-loading div.animated-container.ng-leave-active {
+      opacity: 0 ;
+    }
+    div.m-app-loading div.messaging {
+      color: #FFFFFF ;
+      font-family: monospace ;
+      left: 0px ;
+      margin-top: -125px ;
+      position: absolute ;
+      right: 0px ;
+      text-align: center ;
+      top: 50% ;
+    }
+    div.m-app-loading h1 {
+      font-size: 26px ;
+      line-height: 35px ;
+      margin: 0px 0px 20px 0px ;
+    }
+    div.m-app-loading p {
+      font-size: 18px ;
+      line-height: 14px ;
+      margin: 0px 0px 0px 0px ;
+    }
+    div.m-app-loading img {
+      width: 250px;
+      -webkit-animation:pulse 1000ms ease infinite;
+      animation:pulse 1000ms ease infinite;
+    }
+    @keyframes pulse {
+      0% {
+        width: 250px;
+      }
+      50% {
+        width: 255px;
+      }
+      100% {
+        width: 250px;
+      }
+    }
+  </style>
+
+
+  
+  <div class="animated-container">
+
+    <div class="messaging">
+
+      <img src="media/logo1.svg">
+      <noscript><p>Sie benötigen JavaScript-Unterstützung um unsere Website zu besuchen.</p></noscript>
+
+    </div>
+
+  </div>
+  
+
+</div>
+
+
+<div class="container-fluid" id="con-main">
+  <nav id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="HeaderController">
+    
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" ng-click="isNavCollapsed = !isNavCollapsed">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+<a class="navbar-brand" href="/about_us"><img id="logo1" src="media/logo1.svg"><img id="logo2" src="media/logo2.svg"></a>
+      </div>
+      
+      <div class="collapse navbar-collapse navbar-app-collapse" ng-class="isNavCollapsed ? 'collapse' : 'in'">
+        <ul class="nav navbar-nav">
+          <li ng-class="{ active: isActive('/about_us')}"> <a href="/about_us" id="about" title="{{ 'ABOUT_US_TITLE' | translate }}">{{ 'ABOUT_US_TITLE' | translate }}</a></li>
+          <li ng-class="{ active: isActive('/portfolio')}"><a href="/portfolio" id="portfolio" title="{{ 'PORTFOLIO_TITLE' | translate }}">{{ 'PORTFOLIO_TITLE' | translate }}</a></li>
+          <li ng-class="{ active: isActive('/team')}"><a href="/team" id="team" title="{{ 'TEAM_TITLE' | translate }}">{{ 'TEAM_TITLE' | translate }}</a></li>
+          <li ng-class="{ active: isActive('/contact')}"><a href="/contact" id="contact" title="{{ 'CONTACT_TITLE' | translate }}">{{ 'CONTACT_TITLE' | translate }}</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" ng-controller="tabCtrl" style="position: relative">
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div ng-view my-scroll class="slide-animate" ng-swipe-left="onSwipeLeft()" ng-swipe-right="onSwipeRight()"></div>
+
+  </div>
+
+
+<footer class="navbar footer-custom navbar-default navbar-fixed-bottom">
+  <div class="container">
+	  <ul class="footer-text pull-right">
+		  <li>
+			  <a href="" class="navbar-brand" ng-controller="LangCtrl" ng-click="toggleLang()">{{ 'TOGGLE_LANG' | translate }}</a>
+		  </li>
+		  <li>
+			  <a class="navbar-brand" href="/impressum">[Impressum]</a>
+		  </li>
+          <li>
+            <a class="navbar-brand" href="/datenschutzerklaerung">[Datenschutz]</a>
+          </li>
+	  </ul>
+  </div>
+</footer>
+</div>
+  
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-aria/angular-aria.min.js"></script>
+<script src="bower_components/angular-swipe/dist/angular-swipe.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="bower_components/angular-translate/angular-translate.min.js"></script>
+<script src="bower_components/angular-wheelie/dist/angular-wheelie.min.js"></script>
+<script src="bower_components/angular-touch/angular-touch.min.js"></script>
+<script src="bower_components/openpgp/dist/openpgp.min.js"></script>
+
+<script src="js/bundle.min.js"></script>
+
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

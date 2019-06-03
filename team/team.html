@@ -1,0 +1,56 @@
+<div ng-controller="TeamCtrl">
+    <div class="row">
+        <div class="col-sm-11 col-md-11 col-lg-11">
+            <h2>{{ 'TEAM_TITLE' | translate }}</h2>
+            <h3 style="margin-bottom: -20px;">{{ 'TEAM_COORDINATION_TITLE' | translate }}</h3>
+        </div>
+    </div>
+    
+    <div ng-repeat="person in team" class="person-card">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h3 class="portrait text-right">{{ person.name }}</h3>
+                <p class="text-right"><em>{{ person.role }}</em></p>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 10px; padding-bottom: 21px">
+        <div class="col-sm-5 col-md-5 col-lg-5">
+            <div ng-if="person.image != null" class="portrait-box"><img ng-src="{{ person.image }}" class="portrait-img img-responsive"></div>
+        </div>
+        <div class="col-sm-7 col-md-7 col-lg-7">
+            <p style="margin-left:20px; padding-left:10px;"><strong>{{ 'PERSONAL_SKILLS' | translate }}</strong></p>
+            <ul style="margin-left:20px; padding-left:10px;">
+                <li ng-repeat="quali in person.qualification">{{quali}}</li>
+            </ul>
+
+        </div>
+        </div>
+        <div style="position: absolute; right:0px; bottom:0px"><p><a href="mailto:{{ person.mail }}" onmouseover="this.href=this.href.replace(/qrx/g,'');" class="email"><i class="icon-mail contact-icon"></i> E-Mail</a></p>
+        </div>
+    </div>
+    
+    
+    <div class="row">
+        <div class="col-sm-11 col-md-11 col-lg-11">
+            <h3 style="margin-bottom: -20px;">{{ 'NETWORK_TITLE' | translate }}</h3>
+        </div>
+    </div>
+    <div class="person-card">
+        <div class="row" style="padding: 15px">
+            <div class="col-sm-4 col-md-4 col-lg-4 col-sm-push-4 col-md-push-4 col-lg-push-4">
+                <div class="portrait-box" style="margin-top: 15px; margin-bottom: 15px"><img src="media/network.svg" class="portrait-img img-responsive" style="margin-left: -29px; margin-top: -18px"></div>
+            </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 col-sm-pull-4 col-md-pull-4 col-lg-pull-4"><p translate="NETWORK_COLUMN1"></p></div>
+                <div class="col-sm-4 col-md-4 col-lg-4"><p translate="NETWORK_COLUMN2"></p></div>
+
+
+
+            </div>
+    </div>
+    
+    <div class="row" style="margin-top: 21px">
+        <div class="col-sm-11 col-md-11 col-lg-11">
+            <p class="text-right"><a href="/contact" class="btn btn-default">{{ 'CONTACT_TITLE' | translate }} &raquo;</a></p>
+        </div>
+    </div>
+</div>

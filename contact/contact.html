@@ -1,0 +1,71 @@
+<div ng-controller="ContactCtrl">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <h2>{{ 'CONTACT_TITLE' | translate }}</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-6">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+        <p translate="{{'CONTACT_TEXT'}}"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+        <p><a href="mailto:info@unicodqrxe-it.de" onmouseover="this.href=this.href.replace(/qrx/g,'');" class="email" style="color: #333333"><i class="icon-mail contact-icon"></i><b>in</b><span><b>fo@</b></span><b>uni</b><span></span><b>code-it.de</b></a>
+        </p><p><i class="icon-phone contact-icon"></i><b>0453</b><span></span><b>1-412</b><span></span><b>295-0</b></p>
+        <p><i class="icon-fax contact-icon"></i><b>0453</b><span></span><b>1-412</b><span></span><b>295-9</b></p>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+          <a href="components/unicode-it.pub.asc" class="btn btn-default"><i class="icon-lock"></i>Download PGP Key</a><p></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6">
+      
+      <div class="alert alert-success" ng-show="message">{{ message | translate}} <i class="icon-check"></i></div>
+      <div class="alert alert-danger" ng-show="errorMessage">{{ errorMessage | translate}} <i class="icon-cancel-circled"></i></div>
+      <form ng-submit="processForm()">
+        <div class="form-group">
+          <label for="custName">{{ 'YOUR_NAME' | translate }}</label>
+          <input type="text" class="form-control" id="custName" placeholder="{{'NAME_PLACEHOLDER' | translate}}" name="_replyto" ng-model="formData.name" required="true">
+        </div>
+        <div class="form-group">
+          <label for="custEmail">{{ 'YOUR_E-MAIL_ADDRESS' | translate }}</label>
+          <input type="email" class="form-control" id="custEmail" placeholder="{{'E-MAIL_ADDRESS_PLACEHOLDER' | translate}}" name="_replyto" ng-model="formData.email" required="true">
+        </div>
+        <div class="form-group">
+          <label for="custSubject">{{'SUBJECT' | translate}}</label>
+          <input type="text" class="form-control" id="custSubject" placeholder="{{'SUBJECT' | translate}}" ng-model="formData._subject" required="true">
+        </div>
+        <div class="form-group">
+          <label for="message">{{ 'MESSAGE' | translate }}</label>
+          <textarea class="form-control" id="message" rows="10" placeholder="{{'YOUR_MESSAGE' | translate}}" name="message" ng-model="formData.message" required="true"></textarea>
+        </div>
+        <div class="form-group">
+            <div class="panel panel-default" ng-init="isCollapsed = !isCollapsed">
+              <div class="panel-heading" ng-click="isCollapsed = !isCollapsed">
+                <label for="pgpKey">
+                  {{'YOUR_PUBKEY' | translate}}
+                </label>
+              </div>
+              <div uib-collapse="isCollapsed" class="panel-collapse collapse">
+                <div class="panel-body"><textarea class="form-control" id="pgpKey" placeholder="{{'YOUR_PUBKEY_INFO' | translate}}" name="pubkey" rows="5" ng-model="formData.pgpkey"></textarea></div>
+              </div>
+            </div>
+          
+          
+        
+        
+          
+            
+          
+        
+        <p class="help-block">{{'ENCRYPTION_NOTICE' | translate}}</p>
+        <input type="text" name="_gotcha" style="display:none" ng-model="formData._gotcha">
+        <button type="submit" class="btn btn-success btn-lg btn-block"><i class="icon-paper-plane"></i> {{'SEND' | translate}}</button>
+      </div></form>
+    </div>
+  </div>
+</div>
